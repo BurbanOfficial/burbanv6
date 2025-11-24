@@ -1,7 +1,7 @@
 // Configuration
 const ADMIN_PASSWORD = '041-522'; // Change this to your secure password
 const GITHUB_TOKEN = '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'; // Add your GitHub Personal Access Token
-const GITHUB_REPO = 'BurbanOfficial/Burban-CMS';
+const GITHUB_REPO = 'BurbanOfficial/burbanv6';
 const GITHUB_BRANCH = 'main';
 const PRODUCTS_FILE = 'products.json';
 

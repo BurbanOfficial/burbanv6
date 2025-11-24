@@ -1,5 +1,5 @@
 // GitHub CMS Configuration
-const GITHUB_REPO = 'BurbanOfficial/Burban-CMS';
+const GITHUB_REPO = 'BurbanOfficial/burbanv6';
 const GITHUB_BRANCH = 'main';
 const PRODUCTS_FILE = 'products.json';
 
