@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Burban Official</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shop.css">
+</head>
+<body>
+    <!-- Marquee -->
+    <div class="marquee">
+        <div class="marquee-content">
+            <span>Livraison Gratuite dès 50€ d'achats</span>
+            <span>Code Promo : WELCOME10</span>
+            <span>Retours gratuits sous 30 jours</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+            <span>Livraison Gratuite dès 50€ d'achats</span>
+            <span>Code Promo : WELCOME10</span>
+            <span>Retours gratuits sous 30 jours</span>
+        </div>
+        <div class="marquee-content" aria-hidden="true">
+            <span>Livraison Gratuite dès 50€ d'achats</span>
+            <span>Code Promo : WELCOME10</span>
+            <span>Retours gratuits sous 30 jours</span>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="shop.html" class="nav-link"><span class="text-top">Shop</span><span class="text-bottom">Shop</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="text-top">About</span><span class="text-bottom">About</span></a></li>
+                <li class="nav-item"><a href="#" class="nav-link"><span class="text-top">Contact</span><span class="text-bottom">Contact</span></a></li>
+            </ul>
+        </nav>
+        <a href="index.html" class="logo">
+            <img src="https://i.imgur.com/Kl9kTBg.png" alt="Burban Logo">
+        </a>
+        <div class="header-actions">
+            <button class="search-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <path d="m21 21-4.35-4.35"></path>
+                </svg>
+            </button>
+            <button class="cart-btn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M9 22C9.55228 22 10 21.5523 10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22Z"></path>
+                    <path d="M20 22C20.5523 22 21 21.5523 21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22Z"></path>
+                    <path d="M1 1H5L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16H19.4C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6H6"></path>
+                </svg>
+                <span class="cart-count">0</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Shop Section -->
+    <section class="shop-section">
+        <div class="container">
+            <h1 class="shop-title">All Products</h1>
+            
+            <!-- Filters -->
+            <div class="filters">
+                <button class="filter-toggle">Filters</button>
+                <div class="filter-panel">
+                    <div class="filter-group">
+                        <h3>Category</h3>
+                        <label><input type="checkbox" value="tshirt" class="filter-category"> T-Shirts</label>
+                        <label><input type="checkbox" value="hoodie" class="filter-category"> Hoodies</label>
+                        <label><input type="checkbox" value="pants" class="filter-category"> Pants</label>
+                        <label><input type="checkbox" value="accessories" class="filter-category"> Accessories</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Size</h3>
+                        <label><input type="checkbox" value="XS" class="filter-size"> XS</label>
+                        <label><input type="checkbox" value="S" class="filter-size"> S</label>
+                        <label><input type="checkbox" value="M" class="filter-size"> M</label>
+                        <label><input type="checkbox" value="L" class="filter-size"> L</label>
+                        <label><input type="checkbox" value="XL" class="filter-size"> XL</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Color</h3>
+                        <label><input type="checkbox" value="black" class="filter-color"> Black</label>
+                        <label><input type="checkbox" value="white" class="filter-color"> White</label>
+                        <label><input type="checkbox" value="gray" class="filter-color"> Gray</label>
+                        <label><input type="checkbox" value="blue" class="filter-color"> Blue</label>
+                    </div>
+                    <div class="filter-group">
+                        <h3>Price</h3>
+                        <input type="range" min="0" max="200" value="200" class="filter-price" id="priceRange">
+                        <span id="priceValue">0€ - 200€</span>
+                    </div>
+                    <button class="filter-reset">Reset Filters</button>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div class="product-modal" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close">&times;</button>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" alt="" id="modalImage">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <div class="modal-price" id="modalPrice"></div>
+                    <p id="modalDescription"></p>
+                    <div class="modal-variants">
+                        <div class="variant-group">
+                            <label>Size:</label>
+                            <div class="size-options" id="sizeOptions"></div>
+                        </div>
+                        <div class="variant-group">
+                            <label>Color:</label>
+                            <div class="color-options" id="colorOptions"></div>
+                        </div>
+                    </div>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="shop.js"></script>
+</body>
+</html>

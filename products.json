@@ -1,0 +1,53 @@
+[
+  {
+    "id": "1",
+    "name": "Essential Black Tee",
+    "category": "tshirt",
+    "price": 45,
+    "salePrice": null,
+    "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=800&fit=crop",
+    "description": "Premium cotton t-shirt with minimalist design",
+    "sizes": ["XS", "S", "M", "L", "XL"],
+    "colors": ["#000000", "#FFFFFF"],
+    "stock": 50,
+    "publishDate": null,
+    "unpublishDate": null,
+    "isNew": true,
+    "backInStock": false,
+    "published": true
+  },
+  {
+    "id": "2",
+    "name": "Oversized Hoodie",
+    "category": "hoodie",
+    "price": 89,
+    "salePrice": 69,
+    "image": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&h=800&fit=crop",
+    "description": "Comfortable oversized hoodie perfect for streetwear",
+    "sizes": ["S", "M", "L", "XL"],
+    "colors": ["#000000", "#808080"],
+    "stock": 30,
+    "publishDate": null,
+    "unpublishDate": null,
+    "isNew": false,
+    "backInStock": false,
+    "published": true
+  },
+  {
+    "id": "3",
+    "name": "Cargo Pants",
+    "category": "pants",
+    "price": 95,
+    "salePrice": null,
+    "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&h=800&fit=crop",
+    "description": "Modern cargo pants with multiple pockets",
+    "sizes": ["28", "30", "32", "34", "36"],
+    "colors": ["#000000", "#4A4A4A"],
+    "stock": 25,
+    "publishDate": null,
+    "unpublishDate": null,
+    "isNew": true,
+    "backInStock": true,
+    "published": true
+  }
+]

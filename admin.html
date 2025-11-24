@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin CMS - Burban</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <!-- Login Screen -->
+    <div class="login-screen" id="loginScreen">
+        <div class="login-box">
+            <h1>Burban CMS</h1>
+            <form id="loginForm">
+                <input type="password" id="adminPassword" placeholder="Enter password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div class="admin-dashboard" id="adminDashboard" style="display: none;">
+        <header class="admin-header">
+            <h1>Product Management</h1>
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </header>
+
+        <div class="admin-content">
+            <button class="add-product-btn" id="addProductBtn">+ Add New Product</button>
+
+            <div class="products-list" id="productsList">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+
+        <!-- Product Form Modal -->
+        <div class="product-form-modal" id="productFormModal">
+            <div class="modal-content">
+                <h2 id="formTitle">Add Product</h2>
+                <form id="productForm">
+                    <input type="hidden" id="productId">
+                    
+                    <label>Product Name *</label>
+                    <input type="text" id="productName" required>
+                    
+                    <label>Category *</label>
+                    <select id="productCategory" required>
+                        <option value="tshirt">T-Shirt</option>
+                        <option value="hoodie">Hoodie</option>
+                        <option value="pants">Pants</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                    
+                    <label>Price (€) *</label>
+                    <input type="number" id="productPrice" required>
+                    
+                    <label>Sale Price (€)</label>
+                    <input type="number" id="productSalePrice">
+                    
+                    <label>Image URL *</label>
+                    <input type="url" id="productImage" required>
+                    
+                    <label>Description</label>
+                    <textarea id="productDescription" rows="4"></textarea>
+                    
+                    <label>Sizes (comma separated) *</label>
+                    <input type="text" id="productSizes" placeholder="XS,S,M,L,XL" required>
+                    
+                    <label>Colors (comma separated hex codes) *</label>
+                    <input type="text" id="productColors" placeholder="#000000,#FFFFFF" required>
+                    
+                    <label>Stock Quantity *</label>
+                    <input type="number" id="productStock" required>
+                    
+                    <label>Publish Date</label>
+                    <input type="datetime-local" id="productPublishDate">
+                    
+                    <label>Unpublish Date</label>
+                    <input type="datetime-local" id="productUnpublishDate">
+                    
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="productIsNew"> Mark as New
+                    </label>
+                    
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="productBackInStock"> Back in Stock
+                    </label>
+                    
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="productPublished" checked> Published
+                    </label>
+                    
+                    <div class="form-actions">
+                        <button type="submit" class="save-btn">Save Product</button>
+                        <button type="button" class="cancel-btn" id="cancelBtn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
